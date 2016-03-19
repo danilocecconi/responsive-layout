@@ -1,0 +1,324 @@
+/***general***/
+
+* {box-sizing:border-box;}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height:1.5;
+	font-size:0.8em;
+}
+
+.wrapper {
+	padding-right:5%;
+	padding-left: 5%;
+}
+
+img {
+        max-width:100%;
+        max-height:200%;
+}
+
+li {
+        list-style:none;
+}
+
+a {
+	text-decoration:none;
+	color:black;
+}
+
+/***index-portfolio page***/
+
+/**header**/
+
+header {
+	background-color:lightgrey;
+}
+
+header h1 {
+	text-align:center;
+	margin-top:0;
+}
+
+nav {
+        text-align:center;
+        
+}
+
+nav li {
+        background-color:white;
+        
+}
+
+nav a:hover {
+        color: white
+}
+
+.selected {
+	color:red;
+}
+
+header nav ul {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+header nav ul li {
+	margin-bottom:3px;
+	text-transform:uppercase;
+	font-weight:bolder;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+header p {
+        text-align:justify;
+}
+
+/**section**/
+
+section h1, section h2, section p {text-align:center;}
+
+section ul {
+        padding-left:0;
+}
+
+section p {
+        padding-bottom:20px;
+}
+
+/**footer**/
+
+footer {
+	text-align:center;
+	background-color: lightgrey;
+	padding-bottom:1px;
+	position:relative;
+}
+
+.contact_bold {
+	font-weight:bold;
+	margin-left:15px;
+}
+
+footer ul li {
+        display:inline;
+}
+
+.email {
+	padding-bottom:15px;
+	margin-bottom:35px;
+	border-bottom:solid 1px grey;
+}
+
+.student h4{
+	position:absolute;
+	bottom:0;
+	left:20px
+}
+
+.back h4{
+	position:absolute;
+	bottom:0;
+	right:20px;
+}
+
+.home1,
+.portfolio1,
+.contact1 {
+	display:none;
+}
+
+/***home page***/
+
+/**section**/
+
+.bold {
+        font-weight:bold;
+}
+
+.galleria {
+	text-align:justify;
+}
+
+.galleria1 li,
+.galleria2 li {
+	clear:both;
+	width:100%;
+	list-style:decimal;
+}
+
+/***contact***/
+
+#primary, 
+#secondary {
+        text-align:center;
+}
+
+/**responsive layout for tablet**/
+
+@media (min-width: 768px) {
+
+/*general*/
+
+body {
+	font-size:1em;
+}
+
+/*header*/
+
+header {
+	padding-bottom:40%;
+}
+
+header h1 {
+	display:block;
+}
+
+nav ul li {
+	display:inline-block;
+	background-color:lightgrey;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+header img {
+	float:right;
+	width:50%;
+	max-width:34%;
+	max-height:50%;
+}
+
+header p {
+	width:50%;
+	float:left;
+	margin-top:0;
+}
+	
+/*section - 2 column layout*/
+
+section ul li {
+	float:left;
+	width:45%;
+	margin:2.5%;
+}
+
+/*footer*/
+
+footer {
+        clear:both;
+}
+
+.footer_wrapper {
+	padding-right:0;
+	padding-left:0;
+}
+
+.back h4{
+	display:none;
+}
+	
+.home1,
+.portfolio1,
+.contact1 {
+	display:inline;
+}
+
+.home1 h3 {
+	position:absolute;
+	bottom:0;
+	right:220px;
+}
+
+.portfolio1 h3{
+	position:absolute;
+	bottom:0px;
+	right:120px;
+}
+
+.contact1 h3{
+	position:absolute;
+	bottom:0px;
+	right:25px;
+}
+
+footer h3:hover {
+  color: white
+}
+
+.email {
+	padding-bottom:30px;
+	margin-bottom:45px;
+}
+
+/*contact page*/
+
+#primary {
+	width:50%;
+	float:left;
+}
+
+#secondary {
+	width:50%;
+	float:right;
+}
+
+
+}
+
+/**responsive layout for larger screens**/
+
+@media (min-width: 1024px) {
+
+/*general*/
+
+body {
+	font-size:1.2em;
+}
+
+/*header*/
+
+header {
+	padding-top:10px;
+	padding-bottom:44%;
+}
+
+header h1 {
+	float:left;
+	margin-bottom:0;
+}
+
+header nav ul {
+	float:right;
+}
+/*strategy to avoid reversed order of nav criteria after float*/
+
+header nav ul li {
+	float:left;
+}
+
+header img {
+	clear:right;
+}
+
+/*section - three column layout*/
+
+section ul li {
+	width:28.33333333333333333%;
+}
+
+/*footer*/
+
+.email {
+	padding-bottom:40px;
+	margin-bottom:55px;
+}
+
+/***home page - pseudo class***/
+
+li:nth-child(3n+4) {
+        clear:left;
+}
+
+
+}
